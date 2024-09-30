@@ -1,0 +1,2 @@
+SELECT * FROM Books
+ORDER BY PublishDate DESC LIMIT 3;

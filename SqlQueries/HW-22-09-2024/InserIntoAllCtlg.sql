@@ -1,0 +1,51 @@
+USE LibraryManagmentSystem
+
+-- INSERT INTO Books
+--     (Writer,BookName,PublishDate,NumberOfPages,ISBN)
+--     VALUES
+--     ('Orhan Pamuk','Sessiz Ev','1988',320,'978-975-09-0123-4'),
+--     ('Orhan Pamuk','Beyaz Kale','1985',450,'978-975-09-0234-5'),
+--     ('Orhan Pamuk','Kara Kitap','1990',380,'978-975-09-0345-6'),
+--     ('Orhan Pamuk','Cevdet Bey ve Çocukları','1990',420,'978-975-09-0456-7'),
+--     ('Gabriel García Márquez','Yüz Yıllık Yalnızlık','1967',491,'978-867-123-456-7'),
+--     ('Gabriel García Márquez','Kolera Günlerinde Aşk','1985',467,'978-867-123-567-8'),
+--     ('Gabriel García Márquez','General İç Savaşı','1992',398,'978-867-123-678-9'),
+--     ('Gabriel García Márquez','Düşüş','1970',352,'978-867-123-789-0'),
+--     ('Jane Austen','Gurur ve Önyargı','1813',432,'978-123-456-789-0'),
+--     ('Jane Austen','Aşkın Mantığı','1817',398,'978-123-456-890-1'),
+--     ('Jane Austen','Emma','1815',416,'978-123-456-901-2'),
+--     ('Jane Austen','Mansfield Park','1814',480,'978-123-456-012-3'),
+--     ('Fyodor Dostoyevski','Suç ve Ceza','1866',656,'978-234-567-890-1'),
+--     ('Fyodor Dostoyevski','Budala','1869',612,'978-234-567-901-2'),
+--     ('Fyodor Dostoyevski','Karamazov Kardeşler','1880',1001,'978-234-567-012-3'),
+--     ('Fyodor Dostoyevski','Yeraltından Notlar','1864',304,'978-234-567-123-4'),
+--     ('Harper Lee','Bülbülü Taklit Eden Kim?','1960',336,'978-345-678-901-2'),
+--     ('Harper Lee','Gittiğin Yer Nereye?','1960',304,'978-345-678-012-3'),
+--     ('Harper Lee','Sassy, Della and the Valley Girls','1971',280,'978-345-678-123-4'),
+--     ('Harper Lee','The River Between Us','1972',320,'978-345-678-234-5')
+
+-- INSERT INTO Magazines
+--     (MagazineName,Editor,PublishDate,NumberOfPages)
+-- VALUES
+-- ('National Geographic','Robert Ballard',1888,150),
+-- ('The Economist','Zanny Minton Beddoes',1843,120),
+-- ('Scientific American','John Rennie',1845,100),
+-- ('Vogue','Anna Wintour',1892,200),
+-- ('The New Yorker','David Remnick',1925,180)
+
+-- INSERT INTO DVDs
+--     (DvdName,Director,ReleaseDate,Duration)
+-- VALUES
+-- ('Baba','Francis Ford Coppola',1972,175),
+-- ('Şinşilla','Wes Anderson',2001,102),
+-- ('Uçsuz Bucaksız Okyanus','Ang Lee',2012 ,162),
+-- ('Parazit','Bong Joon-ho',2019 ,132),
+-- ('12 Angry Men','Sidney Lumet',1957 ,96)
+
+-- INSERT INTO Students
+-- (StudentName,StudentSurname,BirthDate)
+-- VALUES
+-- ('Alican', 'Kintutar', '2000-05-19'),
+-- ('Seden', 'Serdengeçen', '1998-06-12'),
+-- ('Candan', 'Tutankaçan', '1985-03-19'),
+-- ('Kemal', 'Evrim', '1996-07-16')
