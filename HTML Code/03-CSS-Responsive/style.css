@@ -1,0 +1,117 @@
+body {
+
+    background-color: #243642;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    width: 500px;
+    height: 500px;
+    padding: auto;
+    margin: auto;
+}
+
+h1 {
+    font-size: 48px;
+    padding-left: 5px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: lighter;
+    padding-left: 5px;
+}
+
+p {
+    padding-left: 20px;
+}
+
+
+#Header {
+    color: #F2E5BF;
+    text-align: center;
+
+}
+
+#About {
+    color: #FD8B51;
+}
+
+#Links {
+    color: #F2E5BF;
+}
+
+#Links a {
+    text-decoration: none;
+    color: #FD8B51;
+    font-weight: lighter;
+    font-style: italic;
+    background-color: #50351b;
+
+}
+
+#Links a:hover {
+    color: aliceblue;
+}
+
+#Contact {
+    color: #F2E5BF;
+}
+
+#Header,
+#About,
+.Skills,
+#Links,
+#Contact {
+
+    background-color: #31303a;
+    border-radius: 30px;
+    box-shadow: 10px 5px 10px;
+}
+
+#SkillsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.Skills {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #CB6040;
+    background-color:  ;
+}
+
+#ProfilePicture img {
+
+    border-radius: 50%;
+    box-shadow: 10px 5px 10px;
+
+
+}
+
+#ProfilePicture img:hover {
+
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    -webkit-box-reflect: right 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+}
+
+* {
+    margin-top: 6px;
+    /* margin: 0px;
+        padding: 0px;  */
+    box-sizing: content-box;
+}
+
+#Contact form input[type="submit"] {
+
+    background-color: #FD8B51;
+    color: #F2E5BF;
+    border: none;
+    cursor: pointer;
+
+}
+
+#Contact form input[type="submit"]:hover {
+
+    background-color: #f7a57c;
+    width: 65px;
+
+}

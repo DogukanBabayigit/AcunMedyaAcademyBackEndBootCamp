@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    /*Dış boşluk*/
+    padding: 0px;
+    /*İç boşluk*/
+}
+
+body {
+    background-color: #17705a;
+    font-family: 'Courier New';
+    color: #555;
+    font-size: 18px;
+}
+
+#header {
+    text-align: center;
+    padding: 20px 40px;
+    background-color: #555;
+    color: #FFF;
+
+    /* padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            padding-right: 40px; */
+    /* padding: 20px; */
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+#about,
+#skills,
+#links,
+#profilePicture,
+#contact {
+    background-color: #FFF;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#skillsContainer {
+    display: flex;
+
+}
+
+#skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.skill {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #555;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    padding: 13px 0;
+    width: 115px;
+    margin-left: 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.skill:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transform: translate(5px, 5px);
+}
+
+#links a {
+    text-decoration: none;
+    color: #0075ee;
+    font-weight: bold;
+    background-color: beige;
+}
+
+#links a:hover {
+    color: #0665cc;
+}
+
+#profilePicture img {
+    border-radius: 50%;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: auto;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #0075ee;
+    border-radius: 3px;
+}
+
+#contact form input[type="submit"] {
+    background-color: #555;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+#contact form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+@media (max-width:850px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width :670px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    #links a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width :1170px){
+    .skill{
+        font-size: 12px;
+        width: 80px;
+        padding: 10px 0,0;
+    }
+
+}
+
+@media (max-width :780px) {
+    #skills{
+        flex-direction: column;
+    }
+    #skills h2{
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width :555px){
+    #skillsContainer{
+        flex-direction: column;
+    }
+    .skill{
+        width: 100px;
+    }
+}
