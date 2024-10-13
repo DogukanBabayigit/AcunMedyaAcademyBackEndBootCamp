@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seçiciler</title>
+</head>
+
+<body>
+    <h1>Seçiciler</h1>
+    <p id="hello">Lorem.</p>
+
+    <div>
+        1.Div
+    </div>
+
+    <div>
+        2.Div
+    </div>
+
+    <div id="bosDiv" style="border: 1px solid red;">
+
+    </div>
+    <br>
+    <br>
+
+    <h2 class="TextwHead1">Element Class Seçme</h2>
+
+    <p id="metin1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, consectetur adipisci vitae in
+        fugit numquam? Illo impedit optio ab hic amet sunt quisquam, reprehenderit culpa id quidem cumque, cum natus!
+    </p>
+
+    <div id="metin2" class="metin1" style="background-color: aquamarine;">
+        <a class="link" href="#">Link1</a>
+        <ul>
+            <li>Anasayfa</li>
+            <li>hakkında</li>
+            <li>İletişim</li>
+        </ul>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+    <div id="menu-container">
+        <ul class="menu">
+            <li class="menu-item">Home</li>
+            <li class="menu-item">About</li>
+            <li class="menu-item">Contact</li>
+        </ul>
+    </div>
+
+    <a href="#">Link4</a>
+
+    <script>
+        const helloElement = document.getElementById('hello');
+        // console.log(helloElement);
+        hello.sytle.backgroundColor = 'aqua';
+        hello.sytle.padding = '20px';
+        hello.sytle.color = 'red';
+        hello.innerText = 'Merhaba JS';
+        hello.innerHTML = `<h1>Selamun Aleyküm</h1>`
+
+        const allDivs = document.getElementsByTagName('div')
+        console.log(allDivs)
+        const allH2s = document.getElementsByTagName('h2')
+
+        const bosDivElementi = document.getElementById('bosDiv')
+        bosDiv.innerHTML = `
+            <a href="https://www.google.com">Google</a>
+        `;
+
+
+    </script>
+</body>
+
+</html>

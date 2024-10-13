@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions</title>
 </head>
+
 <body>
-    
+    <h1>Functions</h1>
+    <button onclick="changeMode('black','white')">DarkMode</button>
+    <button onclick="changeMode('white','black')">LightMode</button>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis recusandae dolorem sequi reiciendis ipsa hic
+        soluta dolorum illum ducimus libero quidem deleniti numquam delectus at, quaerat sunt beatae fugit quasi nemo
+        similique odio labore, in expedita. Earum dolorum qui enim autem, incidunt commodi eos similique magnam, vitae
+        alias, repudiandae deleniti. Ea iste repellendus tempore aspernatur quia quos pariatur possimus ducimus, ipsa
+        quidem et iure nesciunt mollitia veniam harum qui eius deserunt. Doloremque corporis modi magnam ipsa illum eius
+        aperiam quidem quisquam blanditiis, dolores atque sed perferendis enim molestias nobis natus pariatur saepe qui
+        id cum. Ex obcaecati ipsum assumenda? Commodi.</p>
+
+
+
+    <script>
+        // /* 
+        //     Function functionName(parameters , parameters...){
+
+        //         Code To Work
+
+        //     }       
+        // */
+
+        function changeMode(bgColor, fgColor) {
+
+            document.bgColor = bgColor;//Arka Plan Rengini Değiştir.
+            document.fgColor = fgColor;//Yazı rengini değiştir.   
+        }
+
+        // function SelamVer() {
+        //     console.log('Merhaba JS!')
+        // }
+
+        // function Sa2(name) {
+        //     console.log('Merhaba ' + name);
+        // }
+        // function SaVer(name) {
+        //    if (name==undefined) {
+        //     console.log('Merhaba JS')
+        //    }else
+        //    console.log(`Merhaba ${name}`)
+        // }
+        // SelamVer();
+        // Sa2('Alex');
+        // SaVer('Engin');
+        // SaVer();
+
+        // function topla(sayi1,sayi2) {
+        //     console.log(sayi1+sayi2);
+        // }
+        // topla(5,6);
+
+        // function sum(no1,no2) {
+        //     let result = no1+no2
+        //     return result
+        // }
+        // let sonuc = sum(5,6)
+        // console.log(sonuc);
+    </script>
+
 </body>
+
 </html>
