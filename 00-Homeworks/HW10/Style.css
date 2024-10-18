@@ -1,0 +1,17 @@
+.navbar,
+.bg-dark {
+    background-color: #1f8335 !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.card-img-top-home {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
