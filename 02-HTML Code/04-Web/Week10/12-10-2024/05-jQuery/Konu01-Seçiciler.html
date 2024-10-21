@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Seçiciler</title>
+</head>
+
+<body>
+    <h1>jQuery Seçiciler</h1>
+    <p>jQuery hızlı, performanslı ve kısa bir şekilde JS kodları yazabilmemizi sağlayan bir kütüphanedir.</p>
+
+    <h2>jQuery nasıl eklenir?</h2>
+    <ol>
+        <li>jQuery dosyasını indirip proje klasörüne koyarak</li>
+        <li>CDN linki kullanarak</li>
+    </ol>
+    <h2 id="title">Id'ye göre seçme</h2>
+    <p id="message" class="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat maxime quidem
+        aliquam qui officiis ab exercitationem dolorem sapiente praesentium? Ea unde corporis nobis quasi esse vitae
+        repellat autem reiciendis fuga.</p>
+    <h2 id="title">Deneme</h2>
+    <p id="description" class="message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora possimus odio,
+        ad eaque expedita iusto iste dignissimos quo omnis nesciunt nisi, dolorem reiciendis. Quam dolores perferendis,
+        obcaecati quos suscipit vero saepe sed molestias itaque. Tempore autem molestias quis? Repellendus enim
+        dignissimos cumque, aspernatur autem atque velit nulla distinctio voluptates eligendi id nisi ex sapiente
+        facilis non reiciendis? Nam, expedita adipisci? Id voluptatibus, in nulla quibusdam impedit ullam tempora ipsum
+        qui obcaecati distinctio unde odit dolores eaque saepe magni tenetur beatae, assumenda soluta voluptate quaerat
+        magnam molestias nam repudiandae quo! Soluta dignissimos velit porro labore cupiditate neque tenetur nostrum
+        nisi deleniti?</p>
+
+
+    <script src="jquery.js"></script>
+    <script>
+        // document.getElementsByTagName('div').innerText='Yeni metin';
+        $('div').text('Yeni metin');
+
+        $('#title').text('jQuery kullanarak ID Seçme');
+        $('#message').text('Yeni mesaj');
+        $('.message').text('Bunu da class ile seçtik');
+        const title = $('#title');
+        console.log($('#description'));
+        const hobbies = ['Spor', 'Kitap', 'Müzik','Sinema','Gezmek'];
+        let htmlContent = '<ul>';
+        hobbies.forEach(hobby => {
+            htmlContent+=`<li>${hobby}</li>`;
+        });
+        htmlContent += '</ul>';
+        console.log(htmlContent);
+        $('#description').html(htmlContent);
+    </script>
+</body>
+
+</html>

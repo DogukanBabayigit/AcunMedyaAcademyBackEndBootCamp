@@ -1,0 +1,65 @@
+@{
+    ViewData["Title"] = "Data Transfer";
+    ViewBag.Title = "Yeni Baslik";
+}
+
+<h1>Data Transfer</h1>
+<a class=" btn btn-success" asp-controller="MVC03DataTransfer" asp-action="ModelData">Model Bazlı Veri Yollama</a>
+
+<a class=" btn btn-primary" asp-controller="MVC03DataTransfer" asp-action="HomePage">Home Page</a>
+
+<p>@ViewBag.WelcomeMessage</p>
+<hr>
+<div class="Container">
+    <table class="table table-bordered table-success">
+        <tr>
+            <th>Id</th>
+            <th>Kategori</th>
+            <th>Açıklama</th>
+            <th>İşlemler</th>
+        </tr>
+        @foreach (var Category in ViewBag.categoryList)
+        {
+            <tr>
+                <td>@Category.Id</td>
+                <td>@Category.Name</td>
+                <td>@Category.Description</td>
+                <td>
+                    <button class="btn btn-warning btn-sm">Düzenle</button>
+                    <button class="btn btn-primary btn-sm">Sil</button>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+<hr>
+<div class="Container">
+    <table class="table table-bordered table-success">
+        <tr>
+            <th>Id</th>
+            <th>Kategori</th>
+            <th>Açıklama</th>
+            <th>İşlemler</th>
+        </tr>
+        @foreach (var Category in (List<Category>)ViewData["CategoryList"])
+        {
+            <tr>
+                <td>@Category.Id</td>
+                <td>@Category.Name</td>
+                <td>@Category.Description</td>
+                <td>
+                    <button class="btn btn-warning btn-sm">Düzenle</button>
+                    <button class="btn btn-primary btn-sm">Sil</button>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
+<hr>
+<h1 class="header text-danger">Action'dan View'e veri gönderme</h1>
+<ul>
+    <li>ViewBag</li>
+    <li>ViewData</li>
+    <li>TempData(ARAŞTIRINIZ!)</li>
+</ul>

@@ -1,0 +1,86 @@
+.body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.header {
+    background: aquamarine;
+    height: 60px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: grey;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: gray;
+}
+
+.page-title {
+    width: 100%;
+    text-align: center;
+    color: brown;
+}
+
+.content-left {
+    width: 20%;
+}
+
+
+.content-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.content-list li {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: rgb(167, 126, 73);
+    padding: 5px 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+
+.campaign-img {
+    width: 200px;
+    height: auto;
+}
+
+.campaign-title {
+    margin-top: 0;
+}
+
+.campaign-description {
+    font-size: 10px;
+}
+
+.message {
+    color: bisque;
+}
+
+.content-right {
+    width: 80%;
+}

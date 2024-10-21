@@ -1,11 +1,10 @@
-﻿using Project24_Interface.Interfaces;
-
-namespace Project24_Interface;
+﻿using System;
 
 class Program
 {
-    static void Main(string[] args)
-    {
-
-    }
+  static void Main(string[] args)
+  {
+    // Your Code Here
+    Console.WriteLine("Hello, World!");
+  }
 }

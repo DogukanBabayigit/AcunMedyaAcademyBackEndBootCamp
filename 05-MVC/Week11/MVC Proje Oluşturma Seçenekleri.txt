@@ -1,0 +1,6 @@
+1) Terminalden TopLevelStatement kullanmadan
+	dotnet new mvc -o UygulamaAdı --use-program-main
+2) Terminalden TopLevelStatement ile
+	dotnet new mvc -o UygulamaAdı
+3) VS Code içinden C# Dev Kit eklentisini kullanarak .Net:New Project komutu ile
+4) Visual Studio ile Create New Project komutu ile

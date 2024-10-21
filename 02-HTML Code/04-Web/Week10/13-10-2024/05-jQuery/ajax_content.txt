@@ -1,0 +1,9 @@
+<h1>AJAX</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate facere repudiandae! Quae laboriosam, tempore accusamus soluta delectus voluptatibus officiis numquam corrupti necessitatibus, dolorem voluptate laborum aliquam maxime corporis quod.</p>
+    <ul>
+        <li>Prop1</li>
+        <li>Prop2</li>
+        <li>Prop3</li>
+        <li>Prop4</li>
+    </ul>
+    <a href="https://www.jquery.com">jQuery sitesine git!</a>
