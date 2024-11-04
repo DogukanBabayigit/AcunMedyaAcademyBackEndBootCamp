@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DASHMIN - Bootstrap Admin Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    @await Html.PartialAsync("_StylePartial")
+
+
+</head>
+
+<body>
+    <div class="container-xxl position-relative bg-white d-flex p-0">
+        @await Html.PartialAsync("_NavbarPartial")
+        @await Html.PartialAsync("_SideBarPartial")
+        @RenderBody()
+        @await Html.PartialAsync("_BackToTopPartial")
+        @await Html.PartialAsync("_SpinnerPartial")
+        @await Html.PartialAsync("_ScriptPartial")
+        <!-- Content Start -->
+        <div class="content">
+
+
+
+        </div>
+        <!-- Content End -->
+
+
+
+    </div>
+
+
+</body>
+
+</html>
