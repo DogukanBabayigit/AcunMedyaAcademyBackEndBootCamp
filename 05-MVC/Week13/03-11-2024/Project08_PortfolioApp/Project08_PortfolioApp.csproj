@@ -11,8 +11,6 @@
     <PackageReference Include="System.Data.Sqlclient" Version="4.8.6" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Models\" />
-  </ItemGroup>
+
 
 </Project>

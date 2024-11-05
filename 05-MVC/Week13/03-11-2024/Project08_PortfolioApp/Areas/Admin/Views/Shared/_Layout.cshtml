@@ -3,36 +3,25 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DASHMIN - Bootstrap Admin Template</title>
+    <title>Portfolio App Admin Panel</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    @await Html.PartialAsync("_StylePartial")
-
-
+    @await Html.PartialAsync("_StylesPartial")
 </head>
 
 <body>
     <div class="container-xxl position-relative bg-white d-flex p-0">
-        @await Html.PartialAsync("_NavbarPartial")
-        @await Html.PartialAsync("_SideBarPartial")
-        @RenderBody()
-        @await Html.PartialAsync("_BackToTopPartial")
         @await Html.PartialAsync("_SpinnerPartial")
-        @await Html.PartialAsync("_ScriptPartial")
-        <!-- Content Start -->
+        @await Html.PartialAsync("_SideBarPartial")
         <div class="content">
-
-
-
+            @await Html.PartialAsync("_NavbarPartial")
+            @RenderBody()
+            @await Html.PartialAsync("_FooterPartial")
         </div>
-        <!-- Content End -->
-
-
-
+        @await Html.PartialAsync("_BacktoTopPartial")
     </div>
-
-
+    @await Html.PartialAsync("_ScriptsPartial")
 </body>
 
 </html>

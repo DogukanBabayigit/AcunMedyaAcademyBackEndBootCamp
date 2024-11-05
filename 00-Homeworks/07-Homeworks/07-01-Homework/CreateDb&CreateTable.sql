@@ -1,0 +1,26 @@
+--USE MyLibrary
+
+CREATE TABLE Kitaplar (
+KitapID INT PRIMARY KEY IDENTITY,
+KitapAdi NVARCHAR(255) NOT NULL,
+Yazar NVARCHAR(255) NOT NULL,
+YayinYili INT,
+SayfaSayisi INT,
+ISBN NVARCHAR(20) UNIQUE
+);
+
+CREATE TABLE Dergiler (
+    DergiID INT PRIMARY KEY IDENTITY,
+    DergiAdi NVARCHAR(255) NOT NULL,
+    Yayýnci NVARCHAR(255),
+    YayýnTarihi DATE,
+    Sayý INT
+);
+
+CREATE TABLE DVDler (
+    DVDID INT PRIMARY KEY IDENTITY,
+    DVDAdi NVARCHAR(255) NOT NULL,
+    Yönetmen NVARCHAR(255),
+    YayýnYýlý INT,
+    Süre INT
+);

@@ -9,15 +9,18 @@ namespace Project08_PortfolioApp.Areas.Admin.Controllers
     public class ProjectController : Controller
     {
         // GET: ProjectController
-        public async Task<AcceptedAtActionResult> Index()
+        public async Task<ActionResult> Index()
         {
-            var connectionString = "Server=localhost,1441;Database=PortfolioDb;User=SA;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
+            //Bağlantıyı hazırlıyoruz
+            var connectionString = "Server=localhost,1433;Database=PortfolioDb;User=sa;Password=Qwe123.,;TrustServerCertificate=true";
             var connection = new SqlConnection(connectionString);
 
+            //Site ayarlarını çekiyoruz
             var queryProjects = "select * from Projects";
             var projects = await connection.QueryAsync<Project>(queryProjects);
-
+            
             return View(projects);
         }
+
     }
 }

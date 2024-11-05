@@ -1,0 +1,12 @@
+CREATE TABLE OduncAlmalar (
+    OduncID INT PRIMARY KEY IDENTITY,
+    OgrenciID INT NOT NULL,
+    KitapID INT NULL,
+    DergiID INT NULL,
+    DVDID INT NULL,
+    OduncTarihi DATE NOT NULL,
+    FOREIGN KEY (OgrenciID) REFERENCES Ogrenciler(OgrenciID),
+    FOREIGN KEY (KitapID) REFERENCES Kitaplar(KitapID),
+    FOREIGN KEY (DergiID) REFERENCES Dergiler(DergiID),
+    FOREIGN KEY (DVDID) REFERENCES DVDler(DVDID)
+);
