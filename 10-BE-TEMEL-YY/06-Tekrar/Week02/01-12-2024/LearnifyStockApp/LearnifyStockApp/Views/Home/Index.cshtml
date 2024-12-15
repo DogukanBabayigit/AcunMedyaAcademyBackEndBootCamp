@@ -1,0 +1,88 @@
+﻿<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+    <div>
+        <h3 class="fw-bold mb-3">Learnify Stock App</h3>
+        <h6 class="op-7 mb-2">Yönetim Paneli</h6>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-md-3">
+        <h6 class="fs-5 text-primary display-6 fw-normal text-center">En Çok Satış Yapılan Kategori</h6>
+        <div class="card bg-warning card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-primary bubble-shadow-small">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">@ViewBag.CategoryName</p>
+                            <h4 class="card-title">@($"{ViewBag.TotalSales:C2}")</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <h6 class="fs-5 text-primary display-6 fw-normal">Toplam Ürün Sayısı</h6>
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-info bubble-shadow-small">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Ürün Sayısı</p>
+                            <h4 class="card-title">@ViewBag.ProductCount</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <h6 class="fs-5 text-primary display-6 fw-normal">En Çok Satış Yapılan Kategori</h6>
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-success bubble-shadow-small">
+                            <i class="fas fa-luggage-cart"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Sales</p>
+                            <h4 class="card-title">$ 1,345</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <h6 class="fs-5 text-primary display-6 fw-normal">En Çok Satış Yapılan Kategori</h6>
+        <div class="card card-stats card-round">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-icon">
+                        <div class="icon-big text-center icon-secondary bubble-shadow-small">
+                            <i class="far fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="col col-stats ms-3 ms-sm-0">
+                        <div class="numbers">
+                            <p class="card-category">Order</p>
+                            <h4 class="card-title">576</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
