@@ -1,0 +1,34 @@
+@using EfCore.Shared.Dtos
+@model ProductCreateDto
+@{
+    ViewData["Title"] = "Create";
+}
+<h1>Yeni Ürün</h1>
+<hr>
+<form asp-controller="Product" asp-action="Create" method="post">
+    <div class="form-group">
+        <label class="form-label">Ürün</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="form-label">Fiyat</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="form-label">Özellikler</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="form-label">Kategoriler</label>
+        @foreach (var category in Model.CategoriesList)
+        {
+            <div>
+                <input type=" checkbox" asp-for="CategoryIds" value="@category.Id" />
+                <label>@category.Name</label>
+            </div>
+        }
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Kaydet</button>
+    </div>
+</form>

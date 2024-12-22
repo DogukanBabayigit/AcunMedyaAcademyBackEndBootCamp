@@ -1,6 +1,7 @@
 using EfCore.Business.Abstract;
 using EfCore.Shared.Dtos;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EfCore.UI.Controllers
 {
@@ -19,6 +20,32 @@ namespace EfCore.UI.Controllers
         {
             var products = await _productService.GetProductsAsync();
             return View(products ?? new List<ProductDto>());
+        }
+
+        [NonAction]
+        private async Task<List<CategoryDto>> GetCategoryListAsync()
+        {
+            var categories = await _categoryService.GetCategoriesAsync();
+            var categoryList = categories.Select(x => new CategoryDto
+            {
+                Id = x.Id,
+                Name = x.Name
+            }).ToList();
+            return categoryList;
+        }
+
+        public async Task<ActionResult> Create()
+        {
+            ProductCreateDto productCreateDto = new()
+            {
+                CategoryList = await GetCategoryListAsync()
+            };
+            return View(productCreateDto);
+        }
+
+        Task<ActionResult> Create(ProductCreateDto productCreateDto)
+        {
+            return View();
         }
 
     }
