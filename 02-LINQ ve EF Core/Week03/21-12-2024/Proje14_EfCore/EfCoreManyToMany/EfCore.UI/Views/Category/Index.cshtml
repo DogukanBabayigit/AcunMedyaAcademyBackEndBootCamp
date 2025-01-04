@@ -1,28 +1,6 @@
-@using EfCore.Shared.Dtos
-@model IEnumerable<CategoryDto>
 @{
     ViewData["Title"] = "Index";
 }
+
 <h1>Kategoriler</h1>
 <a asp-controller="Category" asp-action="Create" class="btn btn-primary">Yeni Kategori</a>
-<hr>
-<table class="table table-bordered table-striped">
-    <tr>
-        <th>Id</th>
-        <th>Kategori</th>
-        <th>İşlemler</th>
-    </tr>
-    @foreach (var Category in Model)
-    {
-        <tr>
-            <td>@Category.Id</td>
-            <td>@Category.Name</td>
-            <td>
-                <a asp-controller="Category" asp-action="Edit" asp-route-id="@Category.Id"
-                    class="btn btn-warning">Düzenle</a>
-                <a asp-controller="Category" asp-action="Delete" asp-route-id="@Category.Id" class="btn btn-danger">Sil</a>
-            </td>
-        </tr>
-    }
-
-</table>

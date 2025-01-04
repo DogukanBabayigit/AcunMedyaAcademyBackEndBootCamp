@@ -32,32 +32,4 @@ public class ProductRepository : GenericRepository<Product>, IProductRepository
             .ToListAsync();
         return products;
     }
-
-    public async Task<IEnumerable<Product>> GetProductsWithCategoriesAsync()
-    {
-        var products =
-            await _appDbContext
-            .Products
-            .Include(x => x.ProductCategories)
-            .ThenInclude(y => y.Category)
-            .ToListAsync();
-        return products;
-    }
-
-    public async Task<Product> GetProductWithCategoriesAsync(int id)
-    {
-        var product =
-            await _appDbContext
-            .Products
-            .Where(x => x.Id == id)
-            .Include(x => x.ProductCategories)
-            .ThenInclude(y => y.Category)
-            .FirstOrDefaultAsync(x => x.Id == id);
-        return product;
-    }
-
-    Task<Product> IProductRepository.GetProductWithCategoriesAsync(int id)
-    {
-        throw new NotImplementedException();
-    }
 }
