@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\EShop.Data\EShop.Data.csproj" />
-    <ProjectReference Include="..\EShop.Shared\EShop.Shared.csproj" />
-  </ItemGroup>
-
 </Project>
