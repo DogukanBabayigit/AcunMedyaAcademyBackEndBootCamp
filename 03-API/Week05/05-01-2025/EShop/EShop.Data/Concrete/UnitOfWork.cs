@@ -1,22 +1,20 @@
 using System;
 using EShop.Data.Abstract;
 using EShop.Data.Concrete.Contexts;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace EShop.Data.Concrete;
 
 public class UnitOfWork : IUnitOfWork
 {
-    private readonly EShopDbContext _Dbcontext;
-
+    private readonly EShopDbContext _dbContext;
     private readonly IServiceProvider _serviceProvider;
     public void Dispose()
     {
-        _Dbcontext.Dispose();
+        _dbContext.Dispose();
     }
 
-    public IGenericRepository<TEntity>? GetRepository<TEntity>() where TEntity : class
+    public IGenericRepository<TEntity> GetRepository<TEntity>() where TEntity : class
     {
         var repository = _serviceProvider.GetRequiredService<IGenericRepository<TEntity>>();
         return repository;
@@ -24,11 +22,11 @@ public class UnitOfWork : IUnitOfWork
 
     public int Save()
     {
-        return _Dbcontext.SaveChanges();
+        return _dbContext.SaveChanges();
     }
 
     public async Task<int> SaveAsync()
     {
-        return await _Dbcontext.SaveChangesAsync();
+        return await _dbContext.SaveChangesAsync();
     }
 }
